@@ -1,0 +1,47 @@
+{
+    "theme_color":"#000000",
+    "background_color":"#000000",
+    "icons":[
+        {
+            "purpose":"maskable",
+            "sizes":"512x512",
+            "src":"icon512_maskable.png",
+            "type":"image/png"
+        },
+        {
+            "purpose":"any",
+            "sizes":"512x512",
+            "src":"icon512_maskable.png",
+            "type":"image/png"
+        }
+        ],
+    "orientation":"any",
+    "display":"standalone",
+    "dir":"auto",
+    "lang":"en-US",
+    "name":"PointSale",
+    "short_name":"PointSale",
+    "start_url":"https://pointsale.netlify.app",
+    "scope":"https://pointsale.netlify.app",
+    "description":"Maintain Bills, Sales, and Inventory",
+    "screenshots": [    
+   {
+    
+
+     "src": "/screenshot-wide.png",
+      "sizes": "1917x911",
+      "type": "image/svg",
+      "form_factor": "wide",
+      "label": "Application"
+    },
+    {
+
+        "src": "/screenshot-mobile.png",
+         "sizes": "443x792",
+         "type": "image/svg",
+         
+         "label": "Application"
+    }
+ ]
+ 
+}
