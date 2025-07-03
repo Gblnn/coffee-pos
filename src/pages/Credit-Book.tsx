@@ -91,7 +91,7 @@ export default function CreditBook() {
             type="text"
             placeholder="Search by customer name or phone..."
             value={searchQuery}
-            onChange={(e) => setSearchQuery(e.target.value)}
+            onChange={(e:any) => setSearchQuery(e.target.value)}
             className="w-full pl-10"
           />
         </div>

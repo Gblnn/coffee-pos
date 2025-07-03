@@ -71,12 +71,6 @@ export const ProfitChart = () => {
             data={data}
             margin={{ top: 10, right: 10, left: -20, bottom: 0 }}
           >
-            <defs>
-              <linearGradient id="marginGradient" x1="0" y1="0" x2="0" y2="1">
-                <stop offset="5%" stopColor="#ef4444" stopOpacity={0.1} />
-                <stop offset="95%" stopColor="#ef4444" stopOpacity={0} />
-              </linearGradient>
-            </defs>
             <CartesianGrid strokeDasharray="3 3" vertical={false} />
             {/* <XAxis
               dataKey="name"
@@ -91,7 +85,7 @@ export const ProfitChart = () => {
               tick={{ fontSize: 12 }}
               tickLine={false}
               axisLine={false}
-              tickFormatter={(value) => `${value}%`}
+              tickFormatter={(value: any) => `${value}%`}
             />
             <Tooltip
               contentStyle={{
@@ -101,7 +95,7 @@ export const ProfitChart = () => {
                 boxShadow: "0 2px 10px rgba(0,0,0,0.1)",
               }}
               formatter={(value: number) => [`${value}%`, "Margin"]}
-              labelFormatter={(label) => `Product: ${label}`}
+              labelFormatter={(label: any) => `Product: ${label}`}
             />
             <Area
               type="monotone"

@@ -168,12 +168,12 @@ export default function Bills() {
         <Input
           placeholder="Search by customer or bill ID..."
           value={searchQuery}
-          onChange={(e) => setSearchQuery(e.target.value)}
+          onChange={(e: any) => setSearchQuery(e.target.value)}
           className="w-64"
         />
         <Select
           value={paymentFilter}
-          onValueChange={(value) => setPaymentFilter(value)}
+          onValueChange={(value: any) => setPaymentFilter(value)}
         >
           <SelectTrigger className="w-32">
             <SelectValue placeholder="Payment" />
@@ -259,7 +259,7 @@ export default function Bills() {
                 <Button
                   variant="outline"
                   size="sm"
-                  onClick={(e) => {
+                  onClick={(e: any) => {
                     e.stopPropagation();
                     setCurrentPage((p) => Math.max(1, p - 1));
                   }}
@@ -273,7 +273,7 @@ export default function Bills() {
                 <Button
                   variant="outline"
                   size="sm"
-                  onClick={(e) => {
+                  onClick={(e: any) => {
                     e.stopPropagation();
                     setCurrentPage((p) => Math.min(totalPages, p + 1));
                   }}

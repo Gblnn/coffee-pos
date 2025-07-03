@@ -48,8 +48,7 @@ export const Login = () => {
           style={{
             border: "",
             flex: 1,
-            background:
-              "linear-gradient(rgba(0 0 0/ 0%), rgba(100 100 100/ 10%) )",
+            background: "linear-gradient(saddlebrown, saddlebrown )",
             alignItems: "flex-end",
             borderRadius: "1rem",
           }}
@@ -63,7 +62,10 @@ export const Login = () => {
               gap: "0.5rem",
             }}
           >
-            <img src="/arc-logo.png" style={{ width: "4rem", border: "" }} />
+            <img
+              src="/coffee-white.png"
+              style={{ width: "4rem", border: "" }}
+            />
             <div style={{ display: "flex", flexFlow: "column" }}>
               <p style={{ fontWeight: 400, fontSize: "2.25rem" }}></p>
             </div>
@@ -109,17 +111,21 @@ export const Login = () => {
               >
                 <p
                   style={{
-                    top: 0,
-                    left: 0,
+                    display: "flex",
+                    justifyContent: "center",
+                    alignItems: "center",
                     fontSize: "2rem",
                     fontWeight: "600",
                     border: "",
-                    width: "",
-                    paddingLeft: "0.5rem",
-                    marginTop: "",
+                    width: "100%",
+                    gap: "0.5rem",
                   }}
                 >
-                  Sign In
+                  <img
+                    src="/coffee-white.png"
+                    style={{ width: "2rem", height: "2rem" }}
+                  />
+                  Coffee
                 </p>
                 {/* <p>v2.3</p> */}
               </div>
@@ -129,14 +135,14 @@ export const Login = () => {
               <input
                 autoComplete="email"
                 id="email"
-                onChange={(e) => setEmail(e.target.value)}
+                onChange={(e: any) => setEmail(e.target.value)}
                 type="email"
                 placeholder="Email Address"
               />
 
               <input
                 id="password"
-                onChange={(e) => setPassword(e.target.value)}
+                onChange={(e: any) => setPassword(e.target.value)}
                 type="password"
                 placeholder="Password"
               />
@@ -165,7 +171,7 @@ export const Login = () => {
                     style={{
                       fontSize: "0.9rem",
                       fontWeight: "600",
-                      color: "crimson",
+                      color: "chocolate",
                       cursor: "pointer",
                     }}
                     to="/forgot-password"
@@ -180,7 +186,7 @@ export const Login = () => {
                 onClick={handleSubmit}
                 disabled={isLoading}
                 style={{
-                  background: "crimson",
+                  background: "saddlebrown",
                   color: "white",
                   display: "flex",
                   gap: "0.75rem",

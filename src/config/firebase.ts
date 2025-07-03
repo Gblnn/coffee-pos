@@ -7,12 +7,19 @@ import {
 import { getFirestore, enableIndexedDbPersistence } from "firebase/firestore";
 
 const firebaseConfig = {
-  apiKey: import.meta.env.VITE_FIREBASE_API_KEY,
-  authDomain: import.meta.env.VITE_FIREBASE_AUTH_DOMAIN,
-  projectId: import.meta.env.VITE_FIREBASE_PROJECT_ID,
-  storageBucket: import.meta.env.VITE_FIREBASE_STORAGE_BUCKET,
-  messagingSenderId: import.meta.env.VITE_FIREBASE_MESSAGING_SENDER_ID,
-  appId: import.meta.env.VITE_FIREBASE_APP_ID,
+  // apiKey: import.meta.env.VITE_FIREBASE_API_KEY,
+  // authDomain: import.meta.env.VITE_FIREBASE_AUTH_DOMAIN,
+  // projectId: import.meta.env.VITE_FIREBASE_PROJECT_ID,
+  // storageBucket: import.meta.env.VITE_FIREBASE_STORAGE_BUCKET,
+  // messagingSenderId: import.meta.env.VITE_FIREBASE_MESSAGING_SENDER_ID,
+  // appId: import.meta.env.VITE_FIREBASE_APP_ID,
+
+  apiKey: "AIzaSyDHM48rqJQKhk7lMTNPm6-7b-jr-TODb0c",
+  authDomain: "coffee-pos-aa730.firebaseapp.com",
+  projectId: "coffee-pos-aa730",
+  storageBucket: "coffee-pos-aa730.firebasestorage.app",
+  messagingSenderId: "956277416705",
+  appId: "1:956277416705:web:0289d8c6678b533ea07100",
 };
 
 const app = initializeApp(firebaseConfig);

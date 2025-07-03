@@ -351,7 +351,7 @@ export default function Suppliers() {
               <Input
                 id="name"
                 value={newSupplier.name}
-                onChange={(e) =>
+                onChange={(e: any) =>
                   setNewSupplier({ ...newSupplier, name: e.target.value })
                 }
               />
@@ -361,7 +361,7 @@ export default function Suppliers() {
               <Input
                 id="phone"
                 value={newSupplier.phone}
-                onChange={(e) =>
+                onChange={(e: any) =>
                   setNewSupplier({ ...newSupplier, phone: e.target.value })
                 }
               />
@@ -372,7 +372,7 @@ export default function Suppliers() {
                 id="email"
                 type="email"
                 value={newSupplier.email}
-                onChange={(e) =>
+                onChange={(e: any) =>
                   setNewSupplier({ ...newSupplier, email: e.target.value })
                 }
               />
@@ -382,7 +382,7 @@ export default function Suppliers() {
               <Input
                 id="address"
                 value={newSupplier.address}
-                onChange={(e) =>
+                onChange={(e: any) =>
                   setNewSupplier({ ...newSupplier, address: e.target.value })
                 }
               />
@@ -520,7 +520,7 @@ export default function Suppliers() {
                 type="number"
                 min="1"
                 value={restock.quantity}
-                onChange={(e) =>
+                onChange={(e: any) =>
                   setRestock({ ...restock, quantity: e.target.value })
                 }
               />
@@ -533,7 +533,7 @@ export default function Suppliers() {
                 step="0.001"
                 min="0"
                 value={restock.costPrice}
-                onChange={(e) =>
+                onChange={(e: any) =>
                   setRestock({ ...restock, costPrice: e.target.value })
                 }
               />
@@ -543,7 +543,7 @@ export default function Suppliers() {
               <Input
                 id="invoiceNumber"
                 value={restock.invoiceNumber}
-                onChange={(e) =>
+                onChange={(e: any) =>
                   setRestock({ ...restock, invoiceNumber: e.target.value })
                 }
               />
@@ -553,7 +553,7 @@ export default function Suppliers() {
               <Input
                 id="notes"
                 value={restock.notes}
-                onChange={(e) =>
+                onChange={(e: any) =>
                   setRestock({ ...restock, notes: e.target.value })
                 }
               />
@@ -571,7 +571,7 @@ export default function Suppliers() {
       {/* Supplier Details/Edit Dialog */}
       <Dialog
         open={!!selectedSupplier}
-        onOpenChange={(open) => {
+        onOpenChange={(open: any) => {
           if (!open) {
             setSelectedSupplier(null);
             setEditMode(false);
@@ -595,7 +595,7 @@ export default function Suppliers() {
                   <Input
                     id="edit-name"
                     value={editedSupplier.name}
-                    onChange={(e) =>
+                    onChange={(e: any) =>
                       setEditedSupplier({
                         ...editedSupplier,
                         name: e.target.value,
@@ -608,7 +608,7 @@ export default function Suppliers() {
                   <Input
                     id="edit-phone"
                     value={editedSupplier.phone}
-                    onChange={(e) =>
+                    onChange={(e: any) =>
                       setEditedSupplier({
                         ...editedSupplier,
                         phone: e.target.value,
@@ -622,7 +622,7 @@ export default function Suppliers() {
                     id="edit-email"
                     type="email"
                     value={editedSupplier.email}
-                    onChange={(e) =>
+                    onChange={(e: any) =>
                       setEditedSupplier({
                         ...editedSupplier,
                         email: e.target.value,
@@ -635,7 +635,7 @@ export default function Suppliers() {
                   <Input
                     id="edit-address"
                     value={editedSupplier.address}
-                    onChange={(e) =>
+                    onChange={(e: any) =>
                       setEditedSupplier({
                         ...editedSupplier,
                         address: e.target.value,

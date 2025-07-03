@@ -94,12 +94,7 @@ export const SalesChart = () => {
             data={data}
             margin={{ top: 10, right: 10, left: -20, bottom: 0 }}
           >
-            <defs>
-              <linearGradient id="salesGradient" x1="0" y1="0" x2="0" y2="1">
-                <stop offset="5%" stopColor="#ef4444" stopOpacity={0.1} />
-                <stop offset="95%" stopColor="#ef4444" stopOpacity={0} />
-              </linearGradient>
-            </defs>
+            <defs></defs>
             {/* <CartesianGrid  vertical={false} /> */}
             <XAxis
               dataKey="date"
